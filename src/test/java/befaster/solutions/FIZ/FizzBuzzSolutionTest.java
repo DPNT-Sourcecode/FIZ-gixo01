@@ -129,7 +129,7 @@ public class FizzBuzzSolutionTest {
 	@Test
 	public void fizzBuzz_should_return_delux_for_number_greater_than10_identical(){
 		//act
-		String response=fizzBuzzSolution.fizzBuzz(77);
+		String response=fizzBuzzSolution.fizzBuzz(111);
 
 		//assert
 		assertThat(response,equalTo("deluxe"));
