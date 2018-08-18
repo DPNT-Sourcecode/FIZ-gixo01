@@ -50,6 +50,18 @@ public class FizzBuzzSolutionTest {
 		assertThat(response,equalTo("buzz"));
 
 	}
+	
+	
+	@Test
+	public void fizzBuzz_should_return_buzz_if_number_contains5() {
+
+		//act
+		String response=fizzBuzzSolution.fizzBuzz(51);
+
+		//assert
+		assertThat(response,equalTo("buzz"));
+
+	}
 
 
 	@Test
