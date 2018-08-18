@@ -7,10 +7,14 @@ public class FizzBuzzSolution {
 
 		if(number % 3==0 && number % 5==0 ||(number % 3==0 &&  Integer.toString(number).contains("5") ) ||(number % 5==0 && Integer.toString(number).contains("3") ) ||( Integer.toString(number).contains("3")  && Integer.toString(number).contains("5") ) )
 		{
-			return "fizz buzz";
+			return isDeluxNumber(number) ? "fizz buzz delux" :"fizz buzz" ;
 		}
 		if(number % 3==0 || Integer.toString(number).contains("3") )
 		{
+			 isDeluxNumber(number)
+			 {
+				 return "fizz  deluxe";
+			 }
 			return "fizz";
 		}
 		if(number % 5==0 || Integer.toString(number).contains("5"))
@@ -23,6 +27,11 @@ public class FizzBuzzSolution {
 	
 	private boolean isDeluxNumber(int number)
 	{
+		
+		if(number > 10)
+		{
+			
+		}
 		return true;
 	}
 
