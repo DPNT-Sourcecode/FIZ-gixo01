@@ -36,7 +36,8 @@ public class FizzBuzzSolution {
 	{
 		
 	String stringNumber=Integer.toString(number);
-	
+	String firstChar=stringNumber.substring(0, 1);
+	stringNumber.chars().filter(ch-> ch == firstChar).count();
 		return true;
 	}
 
