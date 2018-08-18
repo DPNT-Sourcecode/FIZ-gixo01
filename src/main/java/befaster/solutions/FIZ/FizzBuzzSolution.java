@@ -25,12 +25,8 @@ public class FizzBuzzSolution {
 
 	private boolean isDeluxNumber(int number)
 	{
-
-		if(number > 10 && isIdentical(number))
-		{
-			return true;
-		}
-		return false;
+		return (number > 10 && isIdentical(number)) ? true:false;
+	
 	}
 
 
