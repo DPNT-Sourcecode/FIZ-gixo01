@@ -17,7 +17,7 @@ public class FizzBuzzSolution {
 		{
 			return "buzz";
 		}
-		else return Integer.toString(number);
+	  return Integer.toString(number);
 	}
 
 }
