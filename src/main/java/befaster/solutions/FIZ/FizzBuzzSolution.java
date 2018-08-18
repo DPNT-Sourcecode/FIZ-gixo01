@@ -11,26 +11,22 @@ public class FizzBuzzSolution {
 		}
 		if(number % 3==0 || Integer.toString(number).contains("3") )
 		{
-			 isDeluxNumber(number)
-			 {
-				 return "fizz  deluxe";
-			 }
-			return "fizz";
+			return isDeluxNumber(number) ? "fizz delux" :"fizz" ;
 		}
 		if(number % 5==0 || Integer.toString(number).contains("5"))
 		{
-			return "buzz";
+			return isDeluxNumber(number) ? "buzz delux" :"buzz" ;
 		}
-	  return Integer.toString(number);
+		return  isDeluxNumber(number) ? "delux"  :Integer.toString(number);
 	}
-	
-	
+
+
 	private boolean isDeluxNumber(int number)
 	{
-		
+
 		if(number > 10)
 		{
-			
+
 		}
 		return true;
 	}
