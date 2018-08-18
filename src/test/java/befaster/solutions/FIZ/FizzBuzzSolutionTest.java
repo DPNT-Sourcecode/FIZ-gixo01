@@ -56,7 +56,7 @@ public class FizzBuzzSolutionTest {
 	public void fizzBuzz_should_return_buzz_if_number_contains5() {
 
 		//act
-		String response=fizzBuzzSolution.fizzBuzz(51);
+		String response=fizzBuzzSolution.fizzBuzz(59);
 
 		//assert
 		assertThat(response,equalTo("buzz"));
