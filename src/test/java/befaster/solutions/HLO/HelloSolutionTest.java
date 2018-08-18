@@ -1,6 +1,5 @@
 package befaster.solutions.HLO;
 
-import static org.junit.Assert.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
