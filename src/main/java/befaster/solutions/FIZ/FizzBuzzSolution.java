@@ -19,7 +19,7 @@ public class FizzBuzzSolution {
 		{
 			return isDeluxNumber(number) ? "buzz deluxe" :"buzz" ;
 		}
-		return  isDeluxNumber(number) ? "deluxe"  :Integer.toString(number);
+		return  isDeluxNumber(number) ? "deluxe" :Integer.toString(number);
 	}
 
 
@@ -35,6 +35,12 @@ public class FizzBuzzSolution {
 		String stringNumber=Integer.toString(number);
 		int count=CharMatcher.is(stringNumber.charAt(0)).countIn(stringNumber);
 		return 	(count== stringNumber.length()) ? true : false;
+	}
+	
+	
+	private boolean isFakeDeluxe(int number)
+	{
+		return (isDeluxNumber(number) && number %2 != 0)? true:false;
 	}
 
 }
