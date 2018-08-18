@@ -27,4 +27,15 @@ public class FizzBuzzSolutionTest {
 		
 	}
 
+	
+	@Test
+	public void fizzBuzz_should_return_buzz_for5() {
+		
+		//act
+				String response=fizzBuzzSolution.fizzBuzz(10);
+				
+				//assert
+				assertThat(response,equalTo("fizz"));
+	
+	}
 }
