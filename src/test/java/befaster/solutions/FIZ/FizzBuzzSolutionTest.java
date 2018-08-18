@@ -82,7 +82,7 @@ public class FizzBuzzSolutionTest {
 
 
 		//act
-		String response=fizzBuzzSolution.fizzBuzz(51);
+		String response=fizzBuzzSolution.fizzBuzz(53);
 
 		//assert
 		assertThat(response,equalTo("fizz buzz"));
