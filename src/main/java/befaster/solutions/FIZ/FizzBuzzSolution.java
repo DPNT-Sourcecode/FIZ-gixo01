@@ -26,8 +26,14 @@ public class FizzBuzzSolution {
 
 		if(number > 10)
 		{
-
+         return true;
 		}
+		return false;
+	}
+	
+	
+	private Boolean isIdentical(int number)
+	{
 		return true;
 	}
 
