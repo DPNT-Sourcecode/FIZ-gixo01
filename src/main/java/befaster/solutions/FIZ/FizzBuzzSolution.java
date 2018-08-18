@@ -28,20 +28,17 @@ public class FizzBuzzSolution {
 
 		if(number > 10 && isIdentical(number))
 		{
-         return true;
+			return true;
 		}
 		return false;
 	}
-	
-	
+
+
 	private Boolean isIdentical(int number)
 	{
-		
-	String stringNumber=Integer.toString(number);
-	String firstChar=stringNumber.substring(0, 1);
-	CharMatcher.is(stringNumber.charAt(0)).countIn(stringNumber);
-//	long count=stringNumber.chars().filter(ch-> ch == firstChar).count();
-		return true;
+		String stringNumber=Integer.toString(number);
+		int count=CharMatcher.is(stringNumber.charAt(0)).countIn(stringNumber);
+		return 	(count== stringNumber.length()) ? true : false;
 	}
 
 }
