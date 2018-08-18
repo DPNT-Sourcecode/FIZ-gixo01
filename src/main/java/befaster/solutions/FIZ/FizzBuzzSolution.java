@@ -9,7 +9,9 @@ public class FizzBuzzSolution {
 
 		if(number % 3==0 && number % 5==0 ||(number % 3==0 &&  Integer.toString(number).contains("5") ) ||(number % 5==0 && Integer.toString(number).contains("3") ) ||( Integer.toString(number).contains("3")  && Integer.toString(number).contains("5") ) )
 		{
+			
 			return isDeluxNumber(number) ? "fizz buzz deluxe" :"fizz buzz" ;
+			
 		}
 		if(number % 3==0 || Integer.toString(number).contains("3") )
 		{
