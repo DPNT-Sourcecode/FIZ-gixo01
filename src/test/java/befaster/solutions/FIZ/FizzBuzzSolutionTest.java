@@ -36,7 +36,7 @@ public class FizzBuzzSolutionTest {
 		String response=fizzBuzzSolution.fizzBuzz(666);
 
 		//assert
-		assertThat(response,equalTo("fizz delux"));
+		assertThat(response,equalTo("fizz deluxe"));
 
 	}
 	
@@ -70,7 +70,7 @@ public class FizzBuzzSolutionTest {
 		String response=fizzBuzzSolution.fizzBuzz(55);
 
 		//assert
-		assertThat(response,equalTo("buzz delux"));
+		assertThat(response,equalTo("buzz deluxe"));
 
 	}
 	
@@ -132,6 +132,6 @@ public class FizzBuzzSolutionTest {
 		String response=fizzBuzzSolution.fizzBuzz(77);
 
 		//assert
-		assertThat(response,equalTo("delux"));
+		assertThat(response,equalTo("deluxe"));
 	}
 }
