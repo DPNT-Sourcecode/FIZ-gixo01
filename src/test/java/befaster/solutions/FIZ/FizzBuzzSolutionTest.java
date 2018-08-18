@@ -28,6 +28,18 @@ public class FizzBuzzSolutionTest {
 
 	}
 	
+	
+	@Test
+	public void fizzBuzz_should_return_fizz_delux_for66() {
+
+		//act
+		String response=fizzBuzzSolution.fizzBuzz(666);
+
+		//assert
+		assertThat(response,equalTo("fizz delux"));
+
+	}
+	
 	@Test
 	public void fizzBuzz_should_return_fizz_if_number_contain3() {
 
@@ -48,6 +60,17 @@ public class FizzBuzzSolutionTest {
 
 		//assert
 		assertThat(response,equalTo("buzz"));
+
+	}
+	
+	@Test
+	public void fizzBuzz_should_return_buzz_delux_for55() {
+
+		//act
+		String response=fizzBuzzSolution.fizzBuzz(55);
+
+		//assert
+		assertThat(response,equalTo("buzz delux"));
 
 	}
 	
@@ -100,5 +123,15 @@ public class FizzBuzzSolutionTest {
 		//assert
 		assertThat(response,equalTo("7"));
 
+	}
+	
+	
+	@Test
+	public void fizzBuzz_should_return_delux_for_number_greater_than10_identical(){
+		//act
+		String response=fizzBuzzSolution.fizzBuzz(77);
+
+		//assert
+		assertThat(response,equalTo("delux"));
 	}
 }
