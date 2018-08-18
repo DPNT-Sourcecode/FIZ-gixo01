@@ -15,13 +15,13 @@ public class FizzBuzzSolution {
 		}
 		if(number % 3==0 || Integer.toString(number).contains("3") )
 		{
-			return isDeluxNumber(number) ? "fizz deluxe" :"fizz" ;
+			return isDeluxNumber(number) ? ((isFake(number) ? "fizz fake deluxe" :" fizz  deluxe" ) ) :"fizz" ;
 		}
 		if(number % 5==0 || Integer.toString(number).contains("5"))
 		{
-			return isDeluxNumber(number) ? "buzz deluxe" :"buzz" ;
+			return isDeluxNumber(number) ? ((isFake(number) ? "buzz fake deluxe" :" buzz  deluxe" ) ):"buzz" ;
 		}
-		return  isDeluxNumber(number) ? "deluxe" :Integer.toString(number);
+		return  isDeluxNumber(number) ? ((isFake(number) ? "fake deluxe" :" deluxe" ) ) :Integer.toString(number);
 	}
 
 
