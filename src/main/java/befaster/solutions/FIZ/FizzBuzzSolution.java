@@ -24,7 +24,7 @@ public class FizzBuzzSolution {
 	private boolean isDeluxNumber(int number)
 	{
 
-		if(number > 10)
+		if(number > 10 && isIdentical(number))
 		{
          return true;
 		}
@@ -34,6 +34,9 @@ public class FizzBuzzSolution {
 	
 	private Boolean isIdentical(int number)
 	{
+		
+	String stringNumber=Integer.toString(number);
+	
 		return true;
 	}
 
