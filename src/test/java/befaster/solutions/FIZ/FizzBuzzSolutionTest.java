@@ -20,10 +20,10 @@ public class FizzBuzzSolutionTest {
 	public void fizzBuzz_should_return_fizz_for3() {
 		
 		//act
-		String response=fizzBuzzSolution.fizzBuzz(3);
+		String response=fizzBuzzSolution.fizzBuzz(6);
 		
 		//assert
-		
+		assertThat(response,equalTo("fizz"));
 		
 	}
 
