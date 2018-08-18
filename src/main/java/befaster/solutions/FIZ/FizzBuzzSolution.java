@@ -1,5 +1,7 @@
 package befaster.solutions.FIZ;
 
+import com.google.common.base.CharMatcher;
+
 public class FizzBuzzSolution {
 
 	public String fizzBuzz(Integer number) {
@@ -37,7 +39,8 @@ public class FizzBuzzSolution {
 		
 	String stringNumber=Integer.toString(number);
 	String firstChar=stringNumber.substring(0, 1);
-	stringNumber.chars().filter(ch-> ch == firstChar).count();
+	CharMatcher.is(stringNumber.charAt(0)).countIn(stringNumber);
+//	long count=stringNumber.chars().filter(ch-> ch == firstChar).count();
 		return true;
 	}
 
