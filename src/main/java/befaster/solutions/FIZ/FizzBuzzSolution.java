@@ -19,5 +19,11 @@ public class FizzBuzzSolution {
 		}
 	  return Integer.toString(number);
 	}
+	
+	
+	private boolean isDeluxNumber(int number)
+	{
+		return true;
+	}
 
 }
