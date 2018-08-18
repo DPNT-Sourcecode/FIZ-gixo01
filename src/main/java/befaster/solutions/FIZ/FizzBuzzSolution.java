@@ -10,7 +10,7 @@ public class FizzBuzzSolution {
 		if(number % 3==0 && number % 5==0 ||(number % 3==0 &&  Integer.toString(number).contains("5") ) ||(number % 5==0 && Integer.toString(number).contains("3") ) ||( Integer.toString(number).contains("3")  && Integer.toString(number).contains("5") ) )
 		{
 			
-			return isDeluxNumber(number) ? "fizz buzz deluxe" :"fizz buzz" ;
+			return (isDeluxNumber(number) ) ?((isFake(number) ? "fizz buzz fake deluxe" :" fizz buzz  deluxe" ) ):"fizz buzz" ;
 			
 		}
 		if(number % 3==0 || Integer.toString(number).contains("3") )
@@ -40,9 +40,9 @@ public class FizzBuzzSolution {
 	}
 	
 	
-	private boolean isFakeDeluxe(int number)
+	private boolean isFake(int number)
 	{
-		return (isDeluxNumber(number) && number %2 != 0)? true:false;
+		return (number %2 != 0)? true:false;
 	}
 
 }
