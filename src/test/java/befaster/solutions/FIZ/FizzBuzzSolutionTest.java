@@ -52,4 +52,17 @@ public class FizzBuzzSolutionTest {
 		assertThat(response,equalTo("fizz buzz"));
 
 	}
+
+
+	@Test
+	public void fizzBuzz_should_return_number_if_not_mutipleof_3and5(){
+
+
+		//act
+		String response=fizzBuzzSolution.fizzBuzz(7);
+
+		//assert
+		assertThat(response,equalTo("7"));
+
+	}
 }
