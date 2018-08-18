@@ -39,4 +39,17 @@ public class FizzBuzzSolutionTest {
 		assertThat(response,equalTo("buzz"));
 
 	}
+
+
+	@Test
+	public void fizzBuzz_should_return_fizzbuzz_for_mutiple_of_3and5() {
+
+
+		//act
+		String response=fizzBuzzSolution.fizzBuzz(15);
+
+		//assert
+		assertThat(response,equalTo("fizz buzz"));
+
+	}
 }
