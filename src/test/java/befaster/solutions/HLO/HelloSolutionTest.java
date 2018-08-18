@@ -19,7 +19,7 @@ public class HelloSolutionTest {
 		
 		// assert
 		
-		assertThat(response,equalTo("Hello World!"));
+		assertThat(response,equalTo("Hello, World!"));
 		
 	}
 
