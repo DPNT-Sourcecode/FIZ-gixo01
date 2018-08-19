@@ -36,7 +36,7 @@ public class FizzBuzzSolutionTest {
 		String response=fizzBuzzSolution.fizzBuzz(666);
 
 		//assert
-		assertThat(response,equalTo("fizz  deluxe"));
+		assertThat(response,equalTo("fizz"));
 
 	}
 	
@@ -95,7 +95,7 @@ public class FizzBuzzSolutionTest {
 		String response=fizzBuzzSolution.fizzBuzz(15);
 
 		//assert
-		assertThat(response,equalTo("fizz buzz"));
+		assertThat(response,equalTo("fizz buzz fake deluxe"));
 
 	}
 	
@@ -132,6 +132,19 @@ public class FizzBuzzSolutionTest {
 		String response=fizzBuzzSolution.fizzBuzz(11);
 
 		//assert
-		assertThat(response,equalTo("fake deluxe"));
+		assertThat(response,equalTo("11"));
+	}
+	
+	
+	@Test
+	public void fizzBuzz_should_return_fizz_deluxe_if_mutiple_of3_and_has3()
+
+	{
+		//act
+		String response=fizzBuzzSolution.fizzBuzz(36);
+
+		//assert
+		assertThat(response,equalTo("fizz deluxe"));
+
 	}
 }
