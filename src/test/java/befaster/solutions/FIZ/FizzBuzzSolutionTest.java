@@ -95,7 +95,7 @@ public class FizzBuzzSolutionTest {
 		String response=fizzBuzzSolution.fizzBuzz(15);
 
 		//assert
-		assertThat(response,equalTo("fizz buzz"));
+		assertThat(response,equalTo("fizz buzz fake deluxe"));
 
 	}
 	
