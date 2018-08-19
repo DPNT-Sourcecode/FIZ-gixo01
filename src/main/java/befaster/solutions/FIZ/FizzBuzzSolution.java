@@ -1,7 +1,5 @@
 package befaster.solutions.FIZ;
 
-import com.google.common.base.CharMatcher;
-
 public class FizzBuzzSolution {
 
 	public String fizzBuzz(Integer number) {
@@ -27,21 +25,13 @@ public class FizzBuzzSolution {
 
 	private boolean isDeluxNumber(int number)
 	{
-		if((number % 3==0 && Integer.toString(number).contains("3") )) {
+		if(number % 3==0 && Integer.toString(number).contains("3") ) {
 			return true;
 		}
-		if((number % 5==0 && Integer.toString(number).contains("5") )) {
+		if(number % 5==0 && Integer.toString(number).contains("5") ) {
 			return true;
 		}
 		return false;
-	}
-
-
-	private Boolean isIdentical(int number)
-	{
-		String stringNumber=Integer.toString(number);
-		int count=CharMatcher.is(stringNumber.charAt(0)).countIn(stringNumber);
-		return 	(count== stringNumber.length()) ? true : false;
 	}
 
 
